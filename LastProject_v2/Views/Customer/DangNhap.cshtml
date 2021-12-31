@@ -1,0 +1,43 @@
+﻿@model LastProject_v2.Areas.Admin.Models.LoginModel
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="section group">
+    <div class="col-md-6">
+        <h2>Đăng nhập</h2>
+        <br />
+        @using (Html.BeginForm("DangNhap", "Customer", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName, "Tài khoản", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br /><br />
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, "Mật khẩu", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <div class="text-center">
+                <a class="font-weight-normal" href="forgot-password.html">Forgot Password?</a>
+            </div>
+            <div class="text-center">
+                <a class="font-weight-normal" href="/Customer/DangKy">Create an Account!</a>
+            </div>
+            <a href="/Customer/LoginFacebook" class="btn btn-facebook btn-user btn-block">
+                <img src="~/Assets/facebook.png" /> Login with Facebook
+            </a>
+        }
+    </div>
+</div>

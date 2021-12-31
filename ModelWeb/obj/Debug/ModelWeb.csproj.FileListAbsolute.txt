@@ -1,0 +1,28 @@
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.dll.config
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.dll
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.pdb
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.dll
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.SqlServer.dll
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.xml
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.SqlServer.xml
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csprojAssemblyReference.cache
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csproj.CoreCompileInputs.cache
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csproj.CopyComplete
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.dll
+D:\1Edu\1Lap Trinh Web\ThucHanhTrenLop\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.pdb
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.dll.config
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\ModelWeb.pdb
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.SqlServer.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\PagedList.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.xml
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\EntityFramework.SqlServer.xml
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\PagedList.xml
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csprojAssemblyReference.cache
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csproj.CoreCompileInputs.cache
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.csproj.CopyComplete
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\obj\Debug\ModelWeb.pdb
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\PagedList.Mvc.dll
+F:\TaiLieu\ASPmvc\WebBanVaLi\WebBanVaLi\ModelWeb\bin\Debug\PagedList.Mvc.xml

@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Filler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br />
+    <span class="alert alert-secondary">Bộ lọc tìm kiếm</span>
+    <br />
+    <br />
+    <div>
+        <div class="dropdown">
+            <button style="width:50%; font-size:14px" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Ram
+            </button>
+            <div class="dropdown-menu">
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "2GB"})" class="dropdown-item">2Gb</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "4GB"})" class="dropdown-item">4Gb</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "8GB"})" class="dropdown-item">8Gb</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "8GB"})" class="dropdown-item">16Gb</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "8GB"})" class="dropdown-item">32Gb</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "8GB"})" class="dropdown-item">>32Gb</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button style="width:50%; font-size:14px" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Màn hình
+            </button>
+            <div class="dropdown-menu">
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "12.3"})" class="dropdown-item">12.3 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "12.4"})" class="dropdown-item">12.4 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "12.5"})" class="dropdown-item">12.5 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "13.3"})" class="dropdown-item">13.3 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "13.5"})" class="dropdown-item">13.5 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "13"})" class="dropdown-item">13 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "13.4"})" class="dropdown-item">13.4 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "15.4"})" class="dropdown-item">15.4 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "14"})" class="dropdown-item">14 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "15"})" class="dropdown-item">15 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "15.6"})" class="dropdown-item">15.6 inch</a>
+                <a href="@Url.Action("FillterProduct", "Home", new { @searchString = "16"})" class="dropdown-item">16 inch</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    option{
+        font-size: 20px
+    }
+    #dropdown-menu a{
+        padding-right: 100px;
+    }
+</style>

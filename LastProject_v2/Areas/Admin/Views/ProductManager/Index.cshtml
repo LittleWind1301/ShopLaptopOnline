@@ -1,0 +1,90 @@
+﻿@model PagedList.IPagedList<ModelWeb.EF1.tProduct>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section header{
+    Danh sách  sản phẩm
+}
+@section search{
+
+}
+
+<a type="button" href="/Admin/ProductManager/Create" class="btn btn-primary">Thêm mới</a>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+
+        @using (Html.BeginForm("Index", "ProductManager", FormMethod.Get))
+        {
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Tìm sản phẩm..."
+                           aria-label="Search" aria-describedby="basic-addon2" name="searchString" value="@ViewBag.searchString" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        }
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ảnh</th>
+                        <th>Tên</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Hãng</th>
+                        <th>Chi tiết</th>
+                        <th>Thời gian bảo hành</th>
+                        <th>Ngày tạo</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr id="row_@item.ID">
+                            <td>
+                                <a href="/Admin/ProductManager/Edit/@item.ID">Sửa</a>  |
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = @item.ID }, new AjaxOptions
+                             {
+                                 Confirm = "Bạn có muốn xóa bản ghi này?",
+                                 OnComplete = "$('#row_" + item.ID + "').remove()",
+                                 HttpMethod = "Delete"
+                             })
+                            </td>
+                            <td><img src="@Url.Content(item.Image )" with="100" height="150" /></td>
+                            <td>@item.Name</td>
+                            <td>@item.Price đ</td>
+                            <td>@item.Quantity</td>
+                            <td>@item.CategoryID</td>
+                            <td>@item.Detail</td>
+                            <td>@item.BaoHanh</td>
+                            <td>@item.CreateDate</td>
+                            <td>@item.Status</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.searchString }))
+
+        </div>
+    </div>
+</div>
+
+<style>
+    td {
+        width: 100px;
+    }
+</style>
